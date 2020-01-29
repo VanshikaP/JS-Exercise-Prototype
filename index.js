@@ -111,10 +111,14 @@ Baby.prototype.play = function(){
   TASK 4
 
   In your own words explain the four principles for the "this" keyword below:
-  1. 
-  2. 
-  3. 
-  4. 
+  1. Window binding - This is the default binding that applies to this keyword. If there is nothing to bind it to, this binds to the window object by default unless strict mode is enabled. Window binding most likely breaks the code as it returns unwanted results.
+
+  2. Strict Mode - It prevents window binding and binds this to undefined in case there is nothing else. The output is just undefined and we have an opprtunity to debug the code properly.
+
+  3. Implicit binding - this keyword automatically refers to the object to the left of dot notations. This is called implicit binding. We dont need to explicitly ask it to bind it to a particular thing.
+
+  4. Explicit binding - This is the most specific way to bind this to something. It uses call, apply or find method to bind this to the specific object.
+ 
 */
 
 
